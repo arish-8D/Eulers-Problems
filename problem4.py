@@ -11,9 +11,8 @@ def is_palindrome(number):
 products = []
 
 for i, j in zip(range(1,1000,), range(1000, 1, -1)):
-		prod = i*j
-		if is_palindrome(prod):
-			products.append(prod)
+		if is_palindrome(i*j):
+			products.append(i*j)
 		else:
 			pass
 
